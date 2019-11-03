@@ -13,7 +13,7 @@ This is a homework assignment for Fanshawe College. Individually we are to creat
 - [ ] Use Sass
 - [ ] Work with Node and Express
 ## Installation
-Open Terminal on your computer and install [npm](https://www.npmjs.com/get-npm "npm") if not already done so
+Open Terminal on your computer and install [npm](https://www.npmjs.com/get-npm "npm") if not already done so. Then follow:
 ```
 # Pick the location of where you want this repository stored - for example purposes, this will be located on your desktop
 
