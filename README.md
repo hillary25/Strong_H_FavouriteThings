@@ -9,7 +9,8 @@ This is a homework assignment for Fanshawe College. Individually we are to creat
 ## Author
 * **Hillary Strong** (https://github.com/hillary25)
 ## Things I Wanted to Achieve
-- [ ] Create proper database
+- [x] Create proper database
+- [x] Fetch 5 things from database
 - [ ] Use Sass
 - [ ] Work with Node and Express
 ## Installation
@@ -36,6 +37,5 @@ $ npm start
 # The site should be running on your localhost:3000
 ```
 ## Acknowledgements
-* Icons (ADD LINK)
 * Fonts (https://fonts.google.com)
-* Images (ADD LINK)
+* Images (Taken by me)
