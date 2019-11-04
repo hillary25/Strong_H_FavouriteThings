@@ -6,11 +6,11 @@ const myVM = (() => {
     let userButtons = document.querySelectorAll('.u-link'),
         lightbox = document.querySelector('.lightbox');
 
-    function renderSocialMedia(socialMedia) {
-        return `<ul class="u-social">
-                    ${socialMedia.map(item => `<li>${item}</li>`).join('')}
-                </ul>`
-    }
+    // function renderSocialMedia(socialMedia) {
+    //     return `<ul class="u-social">
+    //                 ${socialMedia.map(item => `<li>${item}</li>`).join('')}
+    //             </ul>`
+    // }
 
     function parseUserData(person) { // person is the database result
         // this is where creativity comes; motion, loading animation, css, js, etc.
@@ -19,9 +19,18 @@ const myVM = (() => {
             targetImg = lightbox.querySelector('img');
 
         let bioContent = `
-            <p>${person.bio}</p>
-            <h4>Social Media:</h4>
-            ${renderSocialMedia(person.social)}
+            <p1>Favourite thing:</p1>
+            <p>${person.Title}</p>
+            <p1>Category:</p1>
+            <p>${person.Category}</p>
+            <p1>Description:</p1>
+            <p>${person.Description}</p>
+            <p1>Season for favourite thing:</p1>
+            <p>${person.Season}</p>
+            <p1>Reason behind favourite thing:</p1>
+            <p>${person.Reason}</p>
+            <p1>Fun Fact:</p1>
+            <p>${person.Fact}</p>
         `;
 
         console.log(bioContent);

@@ -1,5 +1,5 @@
 {
-  "name": "testmodules",
+  "name": "favouritethings",
   "version": "1.0.0",
   "description": "using classes with node and express",
   "main": "app.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Trevor-FanshaweC/DayOne_Fall19.git"
+    "url": "git+hhttps://github.com/hillary25/Strong_H_FavouriteThings.git"
   },
   "keywords": [
     "classes",
     "node",
     "javascript"
   ],
-  "author": "TVR",
+  "author": "HRS",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
