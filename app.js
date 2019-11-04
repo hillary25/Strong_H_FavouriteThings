@@ -13,7 +13,11 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use('/', require('./routes/index'));
 
+// error handling
+// app.use(function (req, res, next) {
+//     res.status(404).render('404')
+// })
+
 app.listen(port, () => {
     console.log(`app is running on ${port}`);
 })
-
