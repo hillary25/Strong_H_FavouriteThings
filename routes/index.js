@@ -24,7 +24,7 @@ router.get('/', (req, res) => { // req stands for request, you are making a requ
 // ROUTE 2 is showing info for a specific favourite thing
 
 // this resolves to localhost:3000/anything (whatever you put after the slash in the location bar) --> add /anything to the browser and you should see that in the terminal in vsc
-router.get('/:id', (req, res) => {
+router.get('/users/:id', (req, res) => {
     console.log('hit a dynamic route!');
     console.log(req.params.id);
 

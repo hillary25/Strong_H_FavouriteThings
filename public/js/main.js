@@ -49,7 +49,7 @@ const myVM = (() => {
         let imgSrc = this.previousElementSibling.getAttribute('src');
 
         // this will look like /1 (which is a route change)
-        let url = `/${this.getAttribute('href')}`;
+        let url = `/users/${this.getAttribute('href')}`;
 
         fetch(url) // go get the data
             .then(res => res.json()) // then turn it into something js can use, parse the json result into a plain object
