@@ -36,7 +36,7 @@
     top: 0;
     z-index: 5000;
     padding: 20px;
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba(0,0,0,.9);
 }
 
 .lightbox .sidebar {
@@ -48,7 +48,7 @@
 }
 
 .lightbox img {
-    max-width: 500px;
+    max-width: 300px;
     padding-right: 30px;
 }
 
@@ -58,10 +58,10 @@
     cursor: pointer;
     font-size: 2em;
     position: fixed;
-    border: thin solid white;
+    border: thick solid #c20272;
     padding: 2px 14px 5px;
     border-radius: 50%;
-    background-color: rgba(255,255,255,0.25);
+    background-color: white;
 }
 
 .show-lb {
@@ -75,7 +75,7 @@
 
 .user-panel-heading {
     font-family: "Open Sans", cursive;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     color: #333333;
     font-size: 1.2em;
@@ -97,6 +97,7 @@
     background-color: #eee;
     color: #80014b;
     font-family: "Archivo Black", sans-serif;
+    width: 45%;
 }
 
 .u-link:hover {
@@ -105,7 +106,6 @@
     font-family: "Archivo Black", sans-serif;
 }
 
-/* My CSS*/
 h1 {
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
@@ -120,8 +120,7 @@ h4 {
     font-weight: 400;
     font-style: normal;
     font-size: 1.6em;
-    color: #333;
-    text-align: center;
+    text-align: left;
 }
 
 p {
@@ -132,14 +131,20 @@ p {
     color: white;
 }
 
-/*Header*/
+p1 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    color: #c20272;
+}
+
 #mainHeader {
     background-color: white;
     text-align: center;
     color: #c20272;
 }
 
-/*Footer*/
 #mainFooter {
     background-color: #c20272;
     padding-top: 1.5%;
@@ -149,19 +154,35 @@ p {
     font-size: 20px;
 }
 
-@media screen and (min-width: 48em) /*Tablet Size*/ {
+@media screen and (min-width: 18em) /*Tablet Size*/ {
     .team .user-panel {
         flex:1 1
     }
     .team .user-panel .u-avatar {
         max-width:300px
     }
+
+    #mainHeader {
+        padding-top: 1.5%;
+    }
+
+    #mainFooter {
+        padding-top: 2.4%;
+    }
 }
 
 @media screen and (min-width: 64em) /*Laptop Small Size*/ {
-   
+    #mainFooter {
+        padding-top: 1.3%;
+    }
+
+    #mainHeader {
+        padding-top: .5%;
+    }
 }
 
 @media screen and (min-width: 90em) /*Large Laptop Size*/ {
-    
+    #mainFooter {
+        padding-top: 1%;
+    }
 }

@@ -1,22 +1,6 @@
 @import '_vars';
-@import 'modules/_navbar';
 @import 'modules/_users';
 @import 'modules/_lightbox';
-
-body {
-	color: $color_1;
-	background-color: $background_color_4;
-}
-
-h1, h2, h3 { color: $heading-color }
-
-.panel { min-height: 60vh; }
-
-.panel:nth-child(odd) {
-    background-color: salmon;
-    color: white;
-}
-
 @import 'modules/_footer'
 
 .team {
