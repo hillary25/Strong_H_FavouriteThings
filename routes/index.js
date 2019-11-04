@@ -3,7 +3,7 @@ const router = express.Router();
 
 const sql = require('../utils/sql');
 
-// ROUTE 1
+// ROUTE 1 (/ --> get everything on index.hbs)
 router.get('/', (req, res) => { // req stands for request, you are making a request on the site; res stands for response, when the server finds your stuff, it responds ot you
 
     // should really get the user data here and then fetch it thru, but let's try this asynchronously
@@ -21,10 +21,12 @@ router.get('/', (req, res) => { // req stands for request, you are making a requ
     })
 })
 
-// ROUTE 2 is showing info for a specific favourite thing
+// ROUTE 2 is showing info for a specific favourite thing (/:id)
+// for portfolio use '/portfolio/:id' --> this is making the route more specific
+// for infographic use '/infographic/:id'
 
 // this resolves to localhost:3000/anything (whatever you put after the slash in the location bar) --> add /anything to the browser and you should see that in the terminal in vsc
-router.get('/:id', (req, res) => {
+router.get('/users/:id', (req, res) => {
     console.log('hit a dynamic route!');
     console.log(req.params.id);
 
