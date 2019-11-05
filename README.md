@@ -9,10 +9,13 @@ This is a homework assignment for Fanshawe College. Individually we are to creat
 ## Author
 * **Hillary Strong** (https://github.com/hillary25)
 ## Things I Wanted to Achieve
-- [x] Create proper database
-- [x] Fetch 5 things from database
-- [ ] Use Sass
-- [ ] Work with Node and Express
+- [x] Create proper database with 5 columns
+- [x] Fetch 5 things from database, including title, image and description
+- [x] Make error page work
+- [x] Use Sass
+- [X] Work with Node and Express
+- [x] Style how I wanted it to looks
+- [ ] Use link as a piece of data (could get it to work for 1 thing, but not all 3)
 ## Installation
 Open Terminal on your computer and install [npm](https://www.npmjs.com/get-npm "npm") if not already done so. Then follow:
 ```
