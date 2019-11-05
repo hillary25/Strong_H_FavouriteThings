@@ -1,27 +1,83 @@
-.team { 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.team {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 
-    .user-panel {
-        flex: 0 1 200px;
-        text-align: center;
-        padding: 8px;
+	.user-panel {
+		flex: 0 1 200px;
+		text-align: center;
+		padding: 8px;
 
-        .u-avatar { max-width: 200px; }
+		.u-avatar {
+			max-width: 200px;
+		}
 
-        .u-link { 
-            display: block; 
-            //width: 150px;  
-            text-decoration: none;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 5px;
-        }
+		.u-link {
+			display: block;
+			text-decoration: none;
+			margin: 0 auto;
+			padding: 5px;
+		}
+		
+		h1 {
+			margin: 5px 0;
+			font-family: $font_family_1;
+			color: $color_1;
+			font-size: 2em;
+		}
+		h3 {
+			margin: 5px 0;
+			font-family: $font_family_1;
+			color: $color_1;
+			font-size: 1.5em;
+		}
+	}
+}
 
-        h1, h3 { margin: 5px 0; }
-    }
+.user-panel-heading {
+	font-family: $font_family_1;
+	font-weight: 400;
+	font-style: normal;
+	color: $color_1;
+	font-size: 1.2em;
+	text-align: center;
+	padding-top: 20px;
+}
+.panel {
+	min-height: 60vh;
+	&:nth-child(odd) {
+		background-color: $background_color_3;
+		color: $color_1;
+		font-family: $font_family_2;
+	}
+}
+.u-link {
+	background-color: $background_color_3;
+	color: $color_2;
+	font-family: $font_family_2;
+	width: 45%;
+	&:hover {
+		background-color: $background_color_3;
+		color: $color_3;
+		font-family: $font_family_2;
+	}
+}
+h1 {
+	font-family: $font_family_2;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.6em;
+	color: $color_1;
+	text-align: center;
+}
+h3 {
+	font-family: $font_family_2;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	color: $color_1;
+	text-align: center;
 }
 
 @media screen and (min-width: 900px) {
